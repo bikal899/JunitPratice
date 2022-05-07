@@ -10,7 +10,7 @@ public class BrowserFactory {
 	static WebDriver driver;
 
 	public static WebDriver init() {
-		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", "drivers\\ChromeDrivers.exe");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
