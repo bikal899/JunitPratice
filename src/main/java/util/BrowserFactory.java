@@ -11,6 +11,7 @@ public class BrowserFactory {
 
 	public static WebDriver init() {
 		System.setProperty("webdriver.chrome.driver", "drivers\\ChromeDrivers.exe");
+		//System.setProperty("webdriver.firefox.driver", "drivers\\geckodriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
